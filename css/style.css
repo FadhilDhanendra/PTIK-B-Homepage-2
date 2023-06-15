@@ -189,3 +189,24 @@ header .item-button a:hover{
 .videocuy{
     width: 100%;
 }
+
+.about .container{
+    width: 70%;
+}
+
+.about h1{
+    text-align: center;
+}
+
+.about p{
+    text-align: justify;
+}
+
+.about img{
+    width: 90%;
+}
+
+.progress{
+    height: 25px;
+    margin-bottom: 3%;
+}
