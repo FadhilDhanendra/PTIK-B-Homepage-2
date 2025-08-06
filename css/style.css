@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
 body{
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Bai jamjuree', sans-serif;
     overflow-x: hidden;
+    background-color: #172236;
 }
 
 a{
@@ -14,11 +15,24 @@ a:hover{
     color: currentColor;
 }
 
+p{
+    color: white;
+}
+
+h1, h2, h4, h5, h6{
+    font-weight: 700;
+    color: #00f3ff;
+}
+
+h3{
+    font-weight: 700;
+    color: white;
+}
+
 header{
+    position: absolute;
     width: 100vw;
     height: 100px;
-    background-color: #fff;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
     display: flex;
     align-items: center;
 }
@@ -31,8 +45,11 @@ header .container-fluid{
     justify-content: space-between;
 }
 
+.navbar{
+    z-index: 9999;
+}
+
 header .navb-logo img{
-    background-color: black;
     width: 140px;
     height: auto;
 }
@@ -48,7 +65,7 @@ header .item{
     text-align: center;
     margin-inline: 3%;
     letter-spacing: 3px;
-    color: #102447;
+    color: white;
     padding: 5px 0;
     transition: all .1s ease;
     border-bottom: 0px solid #64d6f4;
@@ -57,12 +74,10 @@ header .item{
 }
 
 header .item:hover{
-    border-bottom: 3px solid #64d6f4;
-    border-top: 3px solid #64d6f4;
+    border-bottom: 3px solid #00f3ff;
 }
 
 header .item-button a{
-    background-color: #274d8a;
     width: 150px;
     height: 50px;
     display: flex;
@@ -70,12 +85,7 @@ header .item-button a{
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
     transition: all .5s ease;
-}
-
-header .item-button a:hover{
-    background-color: #64d6f4;
 }
 
 .modal-dialog{
@@ -179,34 +189,324 @@ header .item-button a:hover{
     margin: 0 auto;
     padding: 20% 0;
     font-size: 25px;
-    color: #274d8a;
-}
-
-.mobile-modal-footer a:hover{
     color: #fefefe;
 }
 
-.videocuy{
-    width: 100%;
+.mobile-modal-footer a{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.about .container{
+.mobile-toggler{
+    color: white;
+}
+
+#about .container{
     width: 70%;
 }
 
-.about h1{
-    text-align: center;
-}
-
-.about p{
-    text-align: justify;
-}
-
-.about img{
+#about img{
     width: 90%;
 }
 
+.more-button{
+    width: 150px;
+    text-align: center;
+}
+
+.bannervideo{
+    position: relative;
+    width: 100%;
+}
+
+.bannertext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pidio{
+    filter: brightness(50%);
+    width: 100%;
+    display: block;
+    height: 740px;
+    z-index: -100;
+    object-fit: cover;
+}
+
+.content-items-yes{
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .pidio{
+        height: 500px;
+    }
+
+    .bannertext{
+        font-size: 25px;
+        transform: translate(-50%, 90%);
+    }
+
+    #about .container{
+        width: 85%;
+    }
+
+    #leaders .container, #staff .container,  #members .container,  #staff .container,  #achievement .container, #photos .container, #videos .container, #sosmed .container, #contact .container{
+        width: 90%;
+    }
+
+    #unavailable h6{
+        margin-top: 35px;
+    }
+
+    .leaders-members h6{
+        padding-top: 35px;
+    }
+
+    .instagram-media{
+        min-width: none;
+    }
+
+    .content-items-none{
+        display: none;
+    }
+
+    .content-items-yes{
+        display: block;
+    }
+
+    .mascot{
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #contact{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        padding-bottom: 20px;
+    }
+
+    .navtop-members{
+        position: static;
+        background-color: #1e3358;
+    }
+}
+
+iframe.instagram-media {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: auto !important;
+}
+
 .progress{
-    height: 25px;
-    margin-bottom: 3%;
+    height: 20px;
+    margin-bottom: 2%;
+}
+
+.progress-bar{
+    background-color: #00f3ff;
+}
+
+.card{
+    width: 97%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1e3358;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+}
+
+.card img{
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.card:hover img{
+    transform: scale(1.05);
+}
+
+.card-title{
+    font-weight: 700;
+    color: #00f3ff;
+    font-size: 13px;
+}
+
+.card-date{
+    color: #00f3ff;
+    font-size: 13px;
+    text-align: right;
+}
+
+.card-flip-img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.branch{
+    font-size: 15px;
+}
+
+.card-sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlecol{
+    float:none;
+    margin:0 auto;
+}
+
+.btn-toggle{
+    background-color: #00f3ff;
+    color: #1e3358;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.name{
+    font-weight: 500;
+}
+
+#about, #leaders, #staff, #members, #achievement, #photos, #videos, #sosmed, #schedule, #lecturer, #unavailable{
+    border-bottom: 1px solid #2f394a;
+}
+
+.photos-items{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: white;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5),0 2px 10px 0 rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+    margin-bottom: 15px;
+}
+
+.photos-items:hover{
+    transform: scale(1.03);
+}
+
+#contact .form-control{
+    background-color: #1e3358;
+    border-color: #1e3358;
+    color: #b6cbce;
+}
+
+#contact .form-control:focus{
+    border-color: #00f3ff;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder{
+    color: #b6cbce;
+}
+
+#contact input.form-control{
+    height: 44px;
+}
+
+.social-links a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e3358;
+    border-radius: 100px;
+    font-size: 24px;
+    color: #b6cbce;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover, .btn-toggle:hover{
+    background-color: #1c5fd1;
+    color: white;
+}
+
+.bg-light-gray {
+    background-color: #1e3358;
+}
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.bg-mk.box-shadow {
+    box-shadow: 0px 5px 0px 0px #00a2a7
+}
+
+.bg-mk {
+    background-color: #00f3ff;
+    font-weight: 500;
+}
+
+.mk-text{
+    color: #1e3358;
+    font-weight: 500;
+}
+
+.padding-15px-lr {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.padding-5px-tb {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.margin-10px-bottom {
+    margin-bottom: 10px;
+}
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.margin-10px-top {
+    margin-top: 10px;
+}
+.font-size14 {
+    font-size: 14px;
+}
+
+.text-light-gray {
+    color: #d6d5d5;
+}
+.font-size13 {
+    font-size: 13px;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+th, td{
+    background-color: #1e3358 !important;
+    color: white !important;
+}
+
+td span, td div, tr td{
+    color: white;
 }
