@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icon.png">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./fonts/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -16,36 +19,30 @@
   <body>
     
     <!--Navbar-->
-    <header>
-      <div class="container-fluid">
+    <header id="navtop">
+      <div class="container-fluid navbar">
         <div class="navb-logo">
-          <img src="./images/logo.png" alt="Logo">
+          <img src="./images/logo.png" alt="Logo" class="content-items-none">
         </div>
 
         <div class="navb-items d-none d-xl-flex">
           <div class="item">
-            <a href="">Home</a>
+            <a href="#navtop">Home</a>
           </div>
           <div class="item">
-            <a href="">News</a>
+            <a href="#about">About</a>
           </div>
           <div class="item">
-            <a href="">About</a>
+            <a href="./sites/members.html">Members</a>
           </div>
           <div class="item">
-            <a href="">Members</a>
+            <a href="#photos">Photos</a>
           </div>
           <div class="item">
-            <a href="">Photos</a>
+            <a href="#videos">Videos</a>
           </div>
-          <div class="item">
-            <a href="">Videos</a>
-          </div>
-          <div class="item">
-            <a href="">Schedule</a>
-          </div>
-          <div class="item-button">
-            <a href="" type="button">Contact Us</a>
+          <div class="item-button btn-toggle">
+            <a href="#contact" type="button">Contact Us</a>
           </div>
         </div>
 
@@ -63,39 +60,35 @@
 
               <div class="modal-header">
                 <img src="./images/logo.png" alt="Logo">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x"></i></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
               </div>
 
-              <div class="modal-body">
+              <div data-bs-dismiss="modal" aria-label="Close" class="modal-body">
                 <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-house"></i> Home</a>
+                  <a href="#"><i class="fa-solid fa-house"></i> Home</a>
                 </div>
                 <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-newspaper"></i> News</a>
+                  <a href="#about"><i class="fa-solid fa-info"></i> About</a>
                 </div>
                 <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-info"></i> About</a>
+                  <a href="./sites/members.html"><i class="fa-solid fa-user"></i> Members</a>
                 </div>
                 <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-user"></i> Members</a>
+                  <a href="#photos"><i class="fa-solid fa-image"></i> Photos</a>
                 </div>
                 <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-image"></i> Photos</a>
-                </div>
-                <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-video"></i> Videos</a>
-                </div>
-                <div class="modal-line">
-                  <a href=""><i class="fa-solid fa-calendar-days"></i> Schedule</a>
+                  <a href="#videos"><i class="fa-solid fa-video"></i> Videos</a>
                 </div>
                 
-                <a href="" class="navb-button" type="button">Contact Us</a>
+                <a href="#contact" class="navb-button" type="button">Contact Us</a>
                 
               </div>
 
               <div class="mobile-modal-footer">
-                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.youtube.com/@ptikb22_unm" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ptik.b22/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://tiktok.com/@ptik.b22" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://discord.gg/zkYEvSgU" target="_blank"><i class="fa-brands fa-discord"></i></a>
               </div>
 
             </div>
@@ -104,47 +97,51 @@
       </div>
     </header>
 
-    <div>
-      <!-- <video src="./videos/vid.MP4" autoplay muted loop class="videocuy"></video> -->
-      <img src="./images/pic2.jpg" alt="" style="width: 100%;">
+    <!-- Banner -->
+    <div class="bannervideo">
+      <video autoplay muted loop plays-inline class="pidio" src="./videos/vid1.mp4"></video>
     </div>
 
     <!-- About -->
-    <div class="about mt-5">
+    <div id="about" class="pt-5 pb-5">
       <div class="container">
-        <h1>About Us</h1>
+        <h3 style="text-align: center; color: #00f3ff;">ABOUT US</h3>
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 mascot">
             <img src="./images/mascot1.png" alt="">
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 col-12">
+            <br><br class="content-items-none">
             <h3>Profile</h3>
-            <p>Hai! Kami kelas PTIK B angkatan 2022 dari Universitas Negeri Makassar! Kami adalah mahasiswa yang penuh semangat dan motivasi. Kami berasal dari Jurusan Teknologi Informasi dan Komputer, disana Kami diajarkan berbagai hal tentang dunia teknologi. Contohnya tentang Computer Engineering, Network Engineering, Multimedia, dan tentunya berbagai pelajaran umum.</p>
+            <p style="text-align: justify;">Hello! We are PTIK B Class of 2022 from Universitas Negeri Makassar! We are enthusiastic and motivated students. We come from the Department of Informatic and Computer Engineering, where we are taught various things about the world of technology. For example, Computer Engineering, Network Engineering, Multimedia, and of course, various general subjects.</p>
           </div>
         </div>
 
-        <div class="row mt-5">
-          <h3>Minat</h3>
-          <div class="col-md-9">
-            <p class="mb-0">Rekayasa Perangkat Lunak</p>
+        <br class="content-items-none">
+        <br class="content-items-none">
+
+        <div class="row mt-4">
+          <div class="col-md-9 col-sm-12">
+            <h3>Minat</h3>
+            <p class="mb-1">Rekayasa Perangkat Lunak</p>
             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 25%"></div>
+              <div class="progress-bar" style="width: 40%"></div>
             </div>
-            <p class="mb-0">Multimedia</p>
+            <p class="mb-1">Multimedia</p>
             <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-info" style="width: 50%"></div>
+              <div class="progress-bar" style="width: 60%"></div>
             </div>
-            <p class="mb-0">Animasi</p>
+            <p class="mb-1">Animasi</p>
             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-warning" style="width: 75%"></div>
+              <div class="progress-bar" style="width: 25%"></div>
             </div>
-            <p class="mb-0">Teknik Komputer dan Jaringan</p>
+            <p class="mb-1">Teknik Komputer dan Jaringan</p>
             <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-danger" style="width: 100%"></div>
+              <div class="progress-bar" style="width: 30%"></div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 mascot">
             <img src="./images/mascot2.png" alt="" style="float: right;">
           </div>
         </div>
@@ -152,8 +149,595 @@
       </div>
     </div>
 
+    <!-- Leaders -->
+    <div id="leaders" class="pt-5 pb-5">
+      <div class="container">
+        <h6>CLASS LEADERS</h6>
+        <h3 class="mb-3">Members Who Are Responsible for Leading and Organizing the Class</h3>
+        <div class="kartu row">
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/faroq.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">President</p>
+                <p class="card-text name">Sardar Faroq Ahmad Khan</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/utarakhan22/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/ucang.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Secretary</p>
+                <p class="card-text name">Fauzan Abdullah</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/ucaangg/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/ren.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Secretary Deputy</p>
+                <p class="card-text name">Muhammad Raenaldy</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/renn.7.25/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/fitri.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Finance Manager</p>
+                <p class="card-text name">Andi Fitri Novianti</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/aftt.na0813/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 mb-3 singlecol more-leaders-card d-none">
+            <div class="card">
+              <img src="./images/miftah.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Finance Deputy</p>
+                <p class="card-text name">Devi Miftahul Jannah</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/smling_04/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <button id="toggleLeadersButton" class="btn btn-toggle ms-auto more-button">Show More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Creative Staff -->
+    <div id="staff" class="pt-5 pb-5">
+      <div class="container">
+        <h6>CREATIVE STAFFS</h6>
+        <h3 class="mb-3">Some Members That in Charge of Promoting Our Class</h3>
+        <div class="kartu row">
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/fadhil.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Web Developer</p>
+                <p class="card-text name">Fadhil Dhanendra</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/fadhildhanendra.exe/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="https://fadhildhanendra.netlify.app/" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/dina.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Social Media Admin</p>
+                <p class="card-text name">Fitria Nur Dina Salam</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/fitriaanurdinasalam/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/jaedil.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Designer</p>
+                <p class="card-text name">Andi Jaedil Bugdady</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/jaedil.y/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/nindy.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Publisher</p>
+                <p class="card-text name">Nindy Sri Eriyani</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/nindyeriyani/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="kartu row">
+
+          <div class="col-md-3 more-creative-card d-none content-items-none"></div>
+
+          <div class="col-md-3 mb-3 more-creative-card d-none">
+            <div class="card">
+              <img src="./images/attar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Photographer</p>
+                <p class="card-text name">Muhammad Atthariq</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/atthariq.atthariq/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3 more-creative-card d-none">
+            <div class="card">
+              <img src="./images/fian.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Video Editor</p>
+                <p class="card-text name">Juliano Nufiansyach Dini</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/smthisfinz/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 more-creative-card d-none content-items-none"></div>
+          
+          <div class="row">
+            <button id="toggleCreativeButton" class="btn btn-toggle ms-auto more-button">Show More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Members -->
+    <div id="members" class="pt-5 pb-5">
+      <div class="container">
+        <h6>MEMBERS</h6>
+        <h3 class="mb-3">Other Members Who Are Undoubtedly Very Talented!</h3>
+        <div class="kartu row">
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/faldi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text name">Faldi Firmansyah</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/faldifirmss_/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/wahyu.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text name">Wahyu Hidayat</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/whxyuu_setiawan/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/yasin.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text name">Muhammad Yasin Kadir</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/_mhmmad_yasin/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/fikra.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text name">Muhammad Fikra Junian R</p>
+                <div class="card-sosmed row">
+                  <div class="col-2"><a href="https://www.instagram.com/fikra_xpx/" target="_blank" class="btn btn-toggle"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="col-10"><a href="./sites/unavailable.html" class="btn btn-toggle" style="width: 98%; margin-left: 2%;">Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="row">
+          <div><a href="./sites/members.html" class="btn btn-toggle float-end more-button">More</a></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Achievement -->
+    <div id="achievement" class="pt-5 pb-5">
+      <div class="container">
+        <h6>ACHIEVEMENT</h6>
+        <h3 class="mb-3">Our Achievements That We Have Obtained</h3>
+
+        <div class="kartu row">
+
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="./images/a13a.jpg" data-img1="./images/a13a.jpg" data-img2="./images/a13b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🏐 Volleyball</p>
+                    <p class="card-title branch">Silver 🥈</p>
+                  </div>
+                  <p class="card-text">A remarkable effort by PTIK B 22, earning 2nd place in the Volleyball tournament at the 2025 ICE Sport. Their teamwork and determination were truly impressive!</p>
+                  <p class="card-date">July 30, 2025</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="./images/a12a.jpg" data-img1="./images/a12a.jpg" data-img2="./images/a12b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🏀 Basketball</p>
+                    <p class="card-title branch">Silver 🥈</p>
+                  </div>
+                  <p class="card-text">Another strong showing from PTIK B 22, this time securing 2nd place in the Basketball tournament at the 2025 ICE Sport! Their skill and teamwork truly stood out on the court!</p>
+                  <p class="card-date">July 25, 2025</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="./images/a11a.jpg" data-img1="./images/a11a.jpg" data-img2="./images/a11b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">⚔️ Mobile Legends: Bang Bang</p>
+                    <p class="card-title branch">Gold 🥇</p>
+                  </div>
+                  <p class="card-text">PTIK B 22 dominated the Mobile Legends: Bang Bang tournament at ICE Sport 2025, claiming 1st place with outstanding strategy and teamwork!</p>
+                  <p class="card-date">July 22, 2025</p>
+                </div>
+              </div>
+          </div>
+          
+          
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="./images/a10a.jpg" data-img1="./images/a10a.jpg" data-img2="./images/a10b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🎲 Rungkab</p>
+                    <p class="card-title branch">Bronze 🥉</p>
+                  </div>
+                  <p class="card-text">A fun and focused team effort brought PTIK B 22 to 3rd place in the Rungkab competition at 2025 ICE Sport, proof they can play smart and still have fun.</p>
+                  <p class="card-date">July 15, 2025</p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a9a.jpg" data-img1="./images/a9a.jpg" data-img2="./images/a9b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🎮 Pro Evolution Soccer</p>
+                    <p class="card-title branch">Gold 🥇</p>
+                  </div>
+                  <p class="card-text">After winning solo in 2023, Keyfit returned stronger in 2025, this time teaming up with Amar to claim 1st place once again in the PES tournament at HIMATIK ICE Sports. A back-to-back champion!</p>
+                  <p class="card-date">July 11, 2025</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a8a.jpg" data-img1="./images/a8a.jpg" data-img2="./images/a8b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">♟️ Chess</p>
+                    <p class="card-title branch">Gold 🥇</p>
+                  </div>
+                  <p class="card-text">After two solid years, Asmar finally claimed the top spot in 2025! 1st place in Chess at 2025 ICE Sport. A well-earned victory and a proud highlight for PTIK B 22!</p>
+                  <p class="card-date">July 8, 2025</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a7a.jpg" data-img1="./images/a7a.jpg" data-img2="./images/a7b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🏓 Table Tennis</p>
+                    <p class="card-title branch">Bronze 🥉</p>
+                  </div>
+                  <p class="card-text">Reynaldi stepped up for PTIK B 22 in Table Tennis tournament and brought home 3rd place at the 2024 ICE Sport, great focus and sharp play!</p>
+                  <p class="card-date">July 29, 2024</p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a6a.jpg" data-img1="./images/a6a.jpg" data-img2="./images/a6b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">♟️ Chess</p>
+                    <p class="card-title branch">Bronze 🥉</p>
+                  </div>
+                  <p class="card-text">Continuing his streak, Asmar represented PTIK B 22 again in 2024 and earned 3rd place, a close match and valuable experience gained.</p>
+                  <p class="card-date">July 18, 2024</p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a1a.jpg" data-img1="./images/a1a.jpg" data-img2="./images/a1.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">⚽ Futsal</p>
+                    <p class="card-title branch">Silver 🥈</p>
+                  </div>
+                  <p class="card-text">Fauzan and the team secured 2nd place in Futsal at the 2023 ICE Sport, an intense match and a proud moment for PTIK B 22!</p>
+                  <p class="card-date">August 12, 2023</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a2a.jpg" data-img1="./images/a2a.jpg" data-img2="./images/a2.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">♟️ Chess</p>
+                    <p class="card-title branch">Silver 🥈</p>
+                  </div>
+                  <p class="card-text">Asmar started strong by securing 2nd place in Chess at the 2023 ICE Sport, an impressive debut for PTIK B 22.</p>
+                  <p class="card-date">August 7, 2023</p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a3a.jpg" data-img1="./images/a3a.jpg" data-img2="./images/a3.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">💪 Tug of War</p>
+                    <p class="card-title branch">Silver 🥈</p>
+                  </div>
+                  <p class="card-text">Atthar and the team pulled their way to 2nd place in the Tug of War competition at the 2023 ICE Sport, power and unity in action!</p>
+                  <p class="card-date">August 2, 2023</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3 more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a4a.jpg" data-img1="./images/a4a.jpg" data-img2="./images/a4.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🎮 Pro Evolution Soccer</p>
+                    <p class="card-title branch">Gold 🥇</p>
+                  </div>
+                  <p class="card-text">Keyfit secured 1st place in the PES category at the 2023 ICE Sport. A standout win for PTIK B 22!</p>
+                  <p class="card-date">July 21, 2023</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3 singlecol more-achievement-card d-none">
+            <div class="card">
+              <img src="./images/a5a.jpg" data-img1="./images/a5a.jpg" data-img2="./images/a5b.jpg" class="card-img-top card-flip-img" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title branch">🍽️ Food Competition</p>
+                    <p class="card-title branch">Silver 🥈</p>
+                  </div>
+                  <p class="card-text">In their first event together, PTIK B 22 took 2nd place in the Food Competition at 2022 ICE Fest. What a great start!</p>
+                  <p class="card-date">November 12, 2022</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <button id="toggleAchievementButton" class="btn btn-toggle ms-auto more-button">Show More</button>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <!-- Photos -->
+    <div id="photos" class="pt-5 pb-5">
+      <div class="container">
+        <h6>PHOTOS</h6>
+        <h3 class="mb-3">Various Photos from Various Moments!</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./images/p1.jpg" class="photos-items content-items-none" alt="">
+          </div>
+          <div class="col-md-6">
+            <img src="./images/p2.jpg" class="photos-items content-items-none" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./images/p3.jpg" class="photos-items" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/p4.jpg" class="photos-items content-items-none" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/p5.jpg" class="photos-items" alt="">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div><a href="https://drive.google.com/drive/folders/1FXFdg-0upWQ4oaTVluGUgijO1bm9c5No?usp=drive_link" class="btn btn-toggle float-end more-button" target="_blank">More</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Videos-->
+    <div id="videos" class="pt-5 pb-5">
+      <div class="container">
+        <h6>VIDEOS</h6>
+        <h3 class="mb-3">Videos That We Made from Various Events</h3>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/tSJURfdyVoI" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 content-items-none">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/0zA8THOLhWQ?si=SC_FTltzyWkdwkvY" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div id="sosmed" class="pt-5 pb-5">
+      <div class="container">
+        <h6>SOSIAL MEDIA</h6>
+        <h3 class="mb-3">Follow Us on Instagram for the Latest News!</h3>
+        <div class="row">
+          <div class="col-md-4 content-items-none">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKFQLdsBWdC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CtL5jjcSSym/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CtL5jjcSSym/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by 𝐏𝐓𝐈𝐊 𝐁 &#39;𝟐𝟐 (@ptik.b22)</a></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJGQUimBNTG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Cl84petvN9l/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Cl84petvN9l/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by 𝐏𝐓𝐈𝐊 𝐁 &#39;𝟐𝟐 (@ptik.b22)</a></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script>
+          </div>
+          <div class="col-md-4 content-items-none">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJGQ63Jhm73/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CtL5ANESoDt/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CtL5ANESoDt/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by 𝐏𝐓𝐈𝐊 𝐁 &#39;𝟐𝟐 (@ptik.b22)</a></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="pt-5 pb-5">
+      <div class="container">
+          
+          <div class="row justify-content-center">
+              <div class="col-lg-8 pb-4" style="text-align: center;">
+                  <h6>CONTACT US</h6>
+                  <h3>Interested in Working Together? Let's Talk!</h3>
+              </div>
+
+              <div class="col-lg-8">
+                  <form name="Contact" netlify class="row g-lg-3 gy-3">
+                      <div class="form-group col-md-6">
+                          <input type="text" name="name" id="name" class="form-control" required placeholder="Name" autocomplete="off">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <input type="email" name="email" id="email" class="form-control" required placeholder="Email" autocomplete="off">
+                      </div>
+                      <div class="form-group col-md-12">
+                          <input type="text" name="subject" id="subject" class="form-control" required placeholder="Subject" autocomplete="off">
+                      </div>
+                      <div class="form-group col-md-12">
+                          <textarea name="message" rows="4" name="message" id="message" required class="form-control" placeholder="Message"></textarea>
+                      </div>
+                      <div class="form-group col-md-12 d-grid">
+                          <button type="submit" class="btn btn-toggle">Contact Us</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-3 mt-2">	
+      <div class="container">
+          <div class="row gy-4 justify-content-between mb-3">
+              <div class="col-auto">
+                  <p style="color: #b6cbce;">Copyright &#169; by PTIK B 22</p>
+              </div>
+              <div class="col-auto">
+                <div class="social-links">
+                    <a href="https://youtube.com/@ptikb22_unm" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/ptik.b22/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://tiktok.com/@ptik.b22" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://discord.gg/zkYEvSgU" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=6285346917816" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+          </div>
+      </div>
+    </footer>
 
     <!--JS-->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 
+  </body>
 </html>
